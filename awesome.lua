@@ -9,7 +9,7 @@ require("vicious")
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
 
-terminal = "urxvt"
+terminal = "urxvtc"
 editor = "emacs"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -46,13 +46,13 @@ for s = 2, screen.count() do
 end
 -- }}}
 
-tags[1][1].name = "1 server stuff"
+tags[1][1].name = "1 Dev"
 awful.layout.set(layouts[1], tags[1][1]) --tile.left
-tags[1][2].name = "2 dev"
+tags[1][2].name = "2 Web"
 awful.layout.set(layouts[1], tags[1][2]) --tile.left
-tags[1][3].name = "3 web"
+tags[1][3].name = "3 Chat/Media"
 awful.layout.set(layouts[1], tags[1][3]) --tile.left
-tags[1][4].name = "4 chat/media"
+tags[1][4].name = "4 IRC"
 awful.layout.set(layouts[1], tags[1][4]) --tile.left
 -- {{{ Menu
 
@@ -65,7 +65,6 @@ myawesomemenu = {
 
 mymainmenu = awful.menu.new({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                         { "chrome", "google-chrome" },
-                                        { "firefox", "firefox" },
                                         { "pidgin", "pidgin" },
                                         { "mumble", "mumble" },
                                         { "spux" , "spux" },
@@ -402,10 +401,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Thunar" },
       properties = { floating = true } },    
-    { rule = { class = "Google-chrome" },
-      properties = {  floating = true } },
-    { rule = { class = "Firefox" },
-    properties = {  floating = true } },
+--    { rule = { class = "Google-chrome" },
+--      properties = {  floating = true } },
     { rule = { class = "Xarchiver" },
       properties = {  floating = true } },
 }
