@@ -1,33 +1,37 @@
-URxvt.font: xft:Terminal:pixelsize=11:antialias=false
-URxvt.boldFont: xft:Terminal:bold:pixelsize=11:antialias=false
-URxvt.background:                      #000000
-URxvt.foreground:                      #1793D1
-URxvt.cursorColor:                     #1793D1
-URxvt.throughColor:                    #8080f0
-URxvt.highlightColor:                  #1793D1
-URxvt.underlineColor:                  #008AFF
-URxvtcutchars:                        "()*,<>[]{}|'
-URxvtprint-pipe:                      cat >/tmp/xxx
-URxvt.loginShell:                     false
-URxvt.utmpInhibit:                    true
-URxvt.imLocale:                       en_US-UTF-8
-URxvt.preeditType:                    OnTheSpot,None
-URxvt.perl-lib:                       /home/ben/.urxvt/perl
-URxvt.perl-ext-common:                default,selection-autotransform,xim-onthespot,remote-clipboard,matcher,clipboard,selection,mark-yank-urls
-URxvt.saveLines:                      10000
-URxvt.buffered:                       true
-URxvt.intensityStyles:                false
-URxvt.secondaryScreen:                false
-URxvt.secondaryScroll:                false
-URxvt.scrollTtyKeypress:              false
-URxvt.scrollTtyOutput:                false
-URxvt.scrollWithBuffer:               true
-URxvt.scrollBar:                      true
-URxvt.scrollBar_right:                true
-URxvt.scrollstyle:                    plain
-URxvt.insecure:                       true
-URxvt.pastableTabs:                   false
-URxvt.borderLess:                     false
-URxvt.visualBell:                     false
-URxvt.reverseVideo:                   false
-URxvt.meta:                           ignore
+URxvt.font: xft:DejaVu Sans Mono:size=9
+ 
+URxvt*scrollBar:false
+URxvt*scrollstyle:rxvt
+URxvt*title:Terminal
+ 
+URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
+URxvt.perl-lib: /home/ben/.config/urxvt
+urxvt*perl-ext: default,matcher,selection,mark-yank-urls
+URxvt.underlineURLs: true
+URxvt.urlLauncher: google-chrome
+urxvt*transparent: true
+urxvt*shading: 10
+
+
+*foreground:     #bbbbbb
+*background:     #2e2e2e
+ 
+*color0:  rgb:22/22/22
+*color1:  rgb:cd/5c/5c
+*color2:  rgb:8e/ae/71
+*color3:  rgb:d2/b4/8c
+*color4:  rgb:5f/7b/8a
+*color5:  rgb:cd/cd/b4
+*color6:  rgb:68/68/68
+*color7:  rgb:ee/ee/ee
+*color8:  rgb:55/55/55
+*color9:  rgb:ee/63/63
+*color10: rgb:95/c7/49
+*color11: rgb:cd/cd/c1
+*color12: rgb:6b/7b/8a
+*color13: rgb:cd/cd/b4
+*color14: rgb:77/87/98
+*color15: rgb:ca/ca/ca
+ 
+Xcursor*theme:Grounation
+Xcursor.size:32
