@@ -50,9 +50,9 @@ tags[1][1].name = "1 Dev"
 awful.layout.set(layouts[1], tags[1][1]) --tile.left
 tags[1][2].name = "2 Web"
 awful.layout.set(layouts[1], tags[1][2]) --tile.left
-tags[1][3].name = "3 Chat/Media"
+tags[1][3].name = "3 Chat"
 awful.layout.set(layouts[1], tags[1][3]) --tile.left
-tags[1][4].name = "4 IRC"
+tags[1][4].name = "4 IRC/Media"
 awful.layout.set(layouts[1], tags[1][4]) --tile.left
 -- {{{ Menu
 
@@ -385,11 +385,7 @@ awful.rules.rules = {
                      focus = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
-    { rule = { class = "MPlayer" },
-      properties = { floating = true } },
     { rule = { class = "Pidgin" },
-      properties = { floating = true } },
-    { rule = { class = "Wireshark" },
       properties = { floating = true } },
     { rule = { class = "Vlc" },
       properties = { floating = true } },
@@ -401,8 +397,6 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Thunar" },
       properties = { floating = true } },    
---    { rule = { class = "Google-chrome" },
---      properties = {  floating = true } },
     { rule = { class = "Xarchiver" },
       properties = {  floating = true } },
 }
